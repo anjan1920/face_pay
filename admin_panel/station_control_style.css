@@ -1,0 +1,95 @@
+:root {
+    --primary: #16a34a; /* Green 600 */
+    --accent: #22c55e;  /* Green 500 */
+    --bg: #f8fafc;      /* Slate 50 */
+    --line-width: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    height: 100%;
+}
+
+/* Header */
+#station_name {
+    padding: 15px 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 2px solid var(--accent);
+}
+
+/* Layout Container */
+.container {
+    background-color: #c6c4e0;
+    height: calc(100vh - 60px); /* Adjust if header size changes */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Entry & Exit Box Styles */
+#entry-box,
+#exit-box {
+    flex: 1;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--primary);;
+    color: white;
+    overflow-y: auto;
+}
+
+#exit-box {
+    background-color: #c92020;
+}
+
+/* Section Titles */
+#entry-box > p,
+#exit-box > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Inner content box */
+.inner-box {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid #281616;
+    border-radius: 10px;
+    background-color: #e7e4ff;
+    color: #111;
+}
+
+/* User IDs & Time Lists */
+.user_id, .entry-time, .exit-time {
+    width: 48%;
+}
+
+.user_id ul,
+.entry-time ul,
+.exit-time ul {
+    background-color: #fff;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: 500;
+}
