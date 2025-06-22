@@ -53,7 +53,7 @@ face_pay/
 │ ├── style.css # General styles
 │ ├── station_control_style.css
 │ └── index01.html # (Optional or backup HTML file)
-
+|
 ├── dataset/ # Folder to store face images (if needed)
 ├── embeddings.npz # Numpy array file storing face embeddings
 ├── face_new.py # Face detection & embedding using InsightFace
