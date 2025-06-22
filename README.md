@@ -45,17 +45,19 @@
 
 ## 📁 Project Structure
 face_pay/
-├── admin_panel/ # Web dashboard for station admins
-│ ├── index.html # Landing page
-│ ├── station_control.html # Live station-wise control panel
-│ ├── script.js # General fetch logic
-│ ├── station_control_script.js
-│ ├── style.css # General styles
-│ ├── station_control_style.css
-│ └── index01.html # (Optional or backup HTML file)
-|
-├── dataset/ # Folder to store face images (if needed)
-├── embeddings.npz # Numpy array file storing face embeddings
-├── face_new.py # Face detection & embedding using InsightFace
-├── server.py # Main Flask app (CORS-enabled)
-└── pycache/ # Python bytecode cache
+├── admin_panel/                     # Web dashboard for station admins
+│   ├── index.html                   # Admin landing page
+│   ├── station_control.html         # Live station-wise control panel
+│   ├── script.js                    # General fetch logic
+│   ├── station_control_script.js    # JavaScript for station control
+│   ├── style.css                    # General styles
+│   ├── station_control_style.css    # Styles for control panel
+│   └── index01.html                 # Optional/backup HTML file
+│
+├── dataset/                         # Stores captured face images
+│
+├── embeddings.npz                   # Numpy file storing face embeddings
+├── face_new.py                      # Face detection & embedding logic (InsightFace)
+├── server.py                        # Main Flask backend (CORS-enabled API)
+└── __pycache__/                     # Python bytecode cache
+
