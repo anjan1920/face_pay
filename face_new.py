@@ -8,7 +8,7 @@ from insightface.app import FaceAnalysis
 class face_recognition():
     def __init__(self):
         # --- Config ---
-        self.DATASET_PATH = r"C:\Users\Anjan Das\Desktop\hack4Bengal_4.0\dataset"
+        self.DATASET_PATH = r"C:\Users\Anjan Das\Desktop\face_pay\dataset"
         self.EMBEDDINGS_FILE = "embeddings.npz"
         self.CONFIDENCE_THRESHOLD = 0.7
 
