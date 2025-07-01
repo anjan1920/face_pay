@@ -1,6 +1,6 @@
 # 🚇 FACE_PAY – Face Recognition Based Ticketing System
 
-**FacePay** is a smart facial recognition ticketing system for public transport. Built using Flutter and Python (Flask), this solution allows users to register their face and use it as a digital ticket — eliminating the need for physical cards or QR codes. Admins can monitor real-time station crowd flow via a web-based dashboard.
+**FacePay** is a smart facial recognition ticketing system for public transport. Built using Flutter and Python (Flask), this solution allows users to register their face and use it as a digital ticket, eliminating the need for physical cards or QR codes. Admins can monitor real-time station crowd flow via a web-based dashboard.
 
 ---
 
@@ -55,6 +55,9 @@ face_pay/
 │   └── index01.html                 # Optional/backup HTML file
 │
 ├── dataset/                         # Stores captured face images
+├── FlutterAPP/                     # Both user and station node apps
+│   ├── Station_node_simation_app    #Flutter app simulates the station node that captures face for exit and entry
+│   ├── User_app                     #Flutter appp for user     
 │
 ├── embeddings.npz                   # Numpy file storing face embeddings
 ├── face_new.py                      # Face detection & embedding logic (InsightFace)
